@@ -135,9 +135,9 @@ function display(data: any) {
       }
     }
     for (const symbol of symbols) {
-      console.log(` 英["${yellow(symbol["ph_en"])}"] 美["${yellow(symbol["ph_am"])}"]`);
+      console.log(` 英[${yellow(symbol["ph_en"])}] 美[${yellow(symbol["ph_am"])}]`);
       for (const part of symbol.parts) {
-        console.log(` ${green("◆")} ${cyan(part.part + part.means)}}`);
+        console.log(` ${green("◆")} ${cyan(part.part + part.means)}`);
       }
     }
   } else {
